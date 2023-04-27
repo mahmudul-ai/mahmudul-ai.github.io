@@ -439,7 +439,7 @@ body {
   .footer-section container{
     padding-bottom: 0px;
   }
-  
+}
   @media (max-width: 767px) {
     
     .footer-section {
