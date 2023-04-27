@@ -149,6 +149,9 @@ body {
     font-size: 1.2rem;
     
   }
+  .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+  }
   
   .nav-link:hover {
     color: #fff;
