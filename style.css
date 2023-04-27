@@ -119,11 +119,11 @@ body {
   }
   
   .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
   
-  .nav-link {
+  /* .nav-link {
     font-size: 1.2rem;
     margin-right: 1rem;
   }
@@ -133,22 +133,60 @@ body {
   }
   
   .navbar-toggler {
-    border: none;
+  
     background-color: transparent;
-  }
+  } 
   
   .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
-  }
+  } */
   
+ 
+  .nav-link {
+    font-size: 1.2rem;
+    
+  }
+
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  .navbar-collapse {
+    background-color: #343a40;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-collapse .navbar-nav .nav-item {
+    margin: 0 20px;
+    }
+    
+    .navbar-collapse .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 0;
+   
+    border-bottom: none;
+    }
+    .navbar-expand-sm {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+    .navbar-expand-sm .navbar-nav {
+      flex-direction: column;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-sm .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
   @media (max-width: 768px) {
-    .navbar-nav {
+    /* .navbar-nav {
     margin-top: 20px;
     }
     
-    .navbar-nav .nav-item {
-    display: block;
-    }
+  
     
     .navbar-nav .nav-link {
     padding: 12px 0;
@@ -167,25 +205,25 @@ body {
     .navbar-collapse .navbar-nav .nav-link {
     color: #fff;
     padding: 10px 0;
-    display: block;
+   
     border-bottom: none;
     }
-    .navbar-expand-md {
+    .navbar-expand-sm {
       flex-flow: row nowrap;
       justify-content: flex-start;
     }
-    .navbar-expand-md .navbar-nav {
+    .navbar-expand-sm .navbar-nav {
       flex-direction: column;
     }
-    .navbar-expand-md .navbar-nav .nav-link {
+    .navbar-expand-sm .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
-    .navbar-expand-md .navbar-collapse {
+    .navbar-expand-sm .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
     }
-    }  
+    }   */
   
   /* Home Section Styles */
   
@@ -441,7 +479,7 @@ body {
   .footer-section container{
     padding-bottom: 0px;
   }
-  
+}
   @media (max-width: 767px) {
     
     .footer-section {
