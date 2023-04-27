@@ -167,21 +167,21 @@ body {
     .navbar-collapse .navbar-nav .nav-link {
     color: #fff;
     padding: 10px 0;
- 
+    display: block;
     border-bottom: none;
     }
-    .navbar-expand-md {
+    .navbar-expand-sm {
       flex-flow: row nowrap;
       justify-content: flex-start;
     }
-    .navbar-expand-md .navbar-nav {
+    .navbar-expand-sm .navbar-nav {
       flex-direction: column;
     }
-    .navbar-expand-md .navbar-nav .nav-link {
+    .navbar-expand-sm .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
-    .navbar-expand-md .navbar-collapse {
+    .navbar-expand-sm .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
     }
