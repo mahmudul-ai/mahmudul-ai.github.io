@@ -119,13 +119,13 @@ body {
   }
   
   .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
   
   .nav-link {
     font-size: 1.2rem;
-    margin-right: 1rem;
+   
   }
   
   .nav-link:hover {
@@ -170,21 +170,7 @@ body {
     display: block;
     border-bottom: none;
     }
-    .navbar-expand-md {
-      flex-flow: row nowrap;
-      justify-content: flex-start;
-    }
-    .navbar-expand-md .navbar-nav {
-      flex-direction: column;
-    }
-    .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-    }
-    .navbar-expand-md .navbar-collapse {
-      display: flex !important;
-      flex-basis: auto;
-    }
+    
     }  
   
   /* Home Section Styles */
