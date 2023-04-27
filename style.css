@@ -117,12 +117,12 @@ body {
     background-color: #333;
     padding: 1rem 1.5rem;
   }
-  
+  @media (min-width: 768px) {
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+}
   .nav-link {
     font-size: 1.2rem;
    
@@ -142,6 +142,10 @@ body {
   }
   
   @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
     .navbar-nav {
     margin-top: 20px;
     }
