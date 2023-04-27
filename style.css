@@ -135,12 +135,24 @@ body {
   .navbar-toggler {
   
     background-color: transparent;
-  }
+  } 
   
   .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
   } */
   
+  .navbar-toggler {
+  
+    background-color: transparent;
+  } 
+  .nav-link {
+    font-size: 1.2rem;
+    
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
   @media (max-width: 768px) {
     /* .navbar-nav {
     margin-top: 20px;
