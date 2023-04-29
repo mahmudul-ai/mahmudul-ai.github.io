@@ -1,11 +1,12 @@
 /* Global Styles */
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
     color: #343a40;
     font-size: 16px;
     line-height: 1.6;
     background-color: #f8f8f8;
+    padding-top: 40px;
   }
   
   a {
@@ -25,11 +26,18 @@ body {
     letter-spacing: -0.025em;
   }
   
+  @media (max-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+  }
   p {
     margin-bottom: 1.5rem;
     text-align: justify;
   }
   
+  
+
   ul, ol {
     margin: 0;
     padding: 0;
@@ -89,6 +97,18 @@ body {
     background-color: #666666;
   }
   
+  .profile img {
+    width: 100%;
+    border: 3px solid #343a40;
+    border-radius: 2%;
+  }
+
+  @media (max-width: 768px) {
+    .profile img {
+      border: 0px;
+      /* border-radius: 50%; */
+    }
+  }
   /* Navbar Styles */
   
   /* .navbar {
@@ -116,12 +136,12 @@ body {
   } */
   .navbar {
     background-color: #333;
-    padding: 1rem 1.5rem;
+    padding: .5rem 1.5rem;
   }
   @media (min-width: 768px) {
    
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
   }
 }
@@ -144,6 +164,9 @@ body {
   }
   
   @media (max-width: 768px) {
+    body {
+      padding-top: 60px;
+    } 
     .navbar-brand {
       font-size: 20px;
       font-weight: bold;
@@ -231,6 +254,8 @@ body {
     display: inline-block;
     margin-left: 1rem;
   }
+
+
   
   /* Publications Section Styles */
   

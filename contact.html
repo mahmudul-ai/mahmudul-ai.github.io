@@ -7,19 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact | Mahmudul Haque</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    crossorigin="anonymous" />
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<!-- Option 1: Include in HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
-    <!-- <script src="https://kit.fontawesome.com/79c8cc61ac.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -27,30 +31,31 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="/">Mahmudul Haque</a>
-       
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class=" navbar-nav ml-auto">
-    
-              <li class="nav-item align-content-center">
-                <a class="nav-link" href="/about">About</a>
-              </li>
-              <li class="nav-item align-content-center">
-                <a class="nav-link" href="/publications">Publications</a>
-              </li>
-              <li class="nav-item align-content-center">
-                <a class="nav-link" href="/research"> Research</a>
-              </li>
-              <li class="nav-item align-content-center">
-                <a class="nav-link" href="/contact"> Contact</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="/">Mahmudul Haque</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class=" navbar-nav ml-auto">
+
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link" href="/publications">Publications</a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link" href="/research"> Research</a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link" href="/contact"> Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -68,7 +73,7 @@
                             <label for="name">Name</label>
                             <input type="text" class="form-control" name="entry.328630988" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" class="form-control" name="entry.707143854" required>
@@ -79,8 +84,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control" name="entry.769462960" rows="5"S
-                                required></textarea>
+                            <textarea class="form-control" name="entry.769462960" rows="5" S required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -108,13 +112,14 @@
     <footer class="footer-section">
         <div class="container">
             <div class="row">
+                <hr>
                 <div class="col-md-4">
                     <h4 class="mb-3">Useful Links</h4>
                     <ul class="list-unstyled">
                         <li><a href="#">My CV</a></li>
                         <li><a href="#">My SoP</a></li>
-                        <li><a href="#">Research Interests</a></li>
-                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="/research">Research</a></li>
+                        <li><a href="/contact">Contact Me</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -123,17 +128,20 @@
                             alt="Flag Counter"></a>
 
 
-                    <h4>Social Media</h3>
-                        <div class="footer-social-links">
-                            <a target="_blank" href="https://www.linkedin.com/in/mahmudeece/"><i class="fab fa-linkedin"></i></a>
-              <a target="_blank" href="https://www.researchgate.net/profile/Mahmudul-Haque-4"><i class="fab fa-researchgate"></i></a>
-              <a target="_blank" href="https://scholar.google.com/citations?user=pn39moAAAAAJ&hl=en" class="google-scholar" ><img src="img/icons8-google-scholar-24.png" style="margin-bottom: 25px; width:88%"
-                ></a>
-                        </div>
+                    <h4>Social Media</h4>
+                    <div class="footer-social-links">
+                        <a target="_blank" href="https://www.linkedin.com/in/mahmudeece/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.researchgate.net/profile/Mahmudul-Haque-4"><i
+                                class="ai ai-researchgate-square ai-3x"></i></a>
+                        <a target="_blank" href="https://scholar.google.com/citations?user=pn39moAAAAAJ&hl=en"><i
+                                class="ai ai-google-scholar-square ai-3x"></i></a>
+                    </div>
 
                 </div>
                 <div class="col-md-4">
                     <h4>Contact Me</h4>
+
                     <p><i class="bi bi-envelope"></i> mahmud.eece@gmail.com</p>
                     <p><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</p>
                     <p><i class="bi bi-phone"></i> +880 172 522 0900</p>
@@ -143,6 +151,7 @@
             <p class="text-center">&copy; 2023 Mahmudul Haque. All Rights Reserved.</p>
         </div>
     </footer>
+
     <!-- <object data="templates/footer.html" width="100%" height="100%"></object> -->
 
 
