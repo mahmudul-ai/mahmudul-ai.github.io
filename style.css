@@ -19,12 +19,15 @@ a:hover {
   color: #666666;
 }
 
-h1,
+h1 {
+  margin-top: 1rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin-top: 1rem;
   font-weight: 700;
   line-height: 1.2;
@@ -81,6 +84,7 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    padding-bottom: 30px;
   }
 
 }
@@ -105,6 +109,12 @@ button {
   margin-bottom: 1rem;
   font-weight: 700;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-subsubtitle {
+    text-align: center;
+  }
 }
 
 .btn {
@@ -273,12 +283,79 @@ button {
   margin-bottom: 2rem;
 }
 
+
+
+/* work */
+.about-list-work {
+  text-align: justify;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.about-list-work li {
+  text-indent: -1.5em;
+  margin-bottom: 1rem;
+}
+
+.about-list-work li::before {
+  content: url(img/rsz_work.png);
+  padding-right: 5px;
+}
+
+.about-list-work li strong {
+  font-weight: 700;
+}
+
+.about-list-work li span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
 .about-list {
+  text-align: justify;
   margin-top: 2rem;
 }
 
-.about-list li {
+/* education */
+.about-list-edu {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+.about-list-edu li {
+  text-indent: -1.5rem;
   margin-bottom: 1rem;
+}
+
+.about-list-edu li::before {
+  content: url(img/rsz_graduation-cap.png);
+  padding-right: 5px;
+}
+
+.about-list-edu li strong {
+  font-weight: 700;
+}
+
+.about-list-edu li span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+
+/*  */
+.about-list {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+.about-list li {
+  text-indent: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-list li::before {
+  content: url("img/rsz_bullet-point.png");
+  padding-right: 5px;
 }
 
 .about-list li strong {
@@ -289,8 +366,6 @@ button {
   display: inline-block;
   margin-left: 1rem;
 }
-
-
 
 /* Publications Section Styles */
 
@@ -437,6 +512,12 @@ button {
   padding-right: 0;
   padding-top: 50px;
   padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding-top: 3px;
+  }
 }
 
 .footer-section h4 {
