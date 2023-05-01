@@ -342,7 +342,63 @@ button {
   margin-left: 1rem;
 }
 
+/* accomplishment */
+.about-list-accomplishment {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
 
+.about-list-accomplishment li {
+  text-indent: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-list-accomplishment li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f559";
+  padding-right: 5px;
+}
+
+/* research */
+.about-list-research {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.about-list-research li {
+  text-indent: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-list-research li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f83e";
+  padding-right: 5px;
+}
+
+
+/* skills */
+.about-list-skills {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.about-list-skills li {
+  text-indent: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-list-skills li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f121";
+  padding-right: 5px;
+}
 /*  */
 .about-list {
   text-align: left;
@@ -358,18 +414,10 @@ button {
 .about-list li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
-  content: "\f83e";
+  content: "\f08d";
   padding-right: 5px;
 }
 
-.about-list li strong {
-  font-weight: 700;
-}
-
-.about-list li span {
-  display: inline-block;
-  margin-left: 1rem;
-}
 
 /* Publications Section Styles */
 
