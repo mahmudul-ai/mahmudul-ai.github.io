@@ -284,7 +284,6 @@ button {
 }
 
 
-
 /* work */
 .about-list-work {
   text-align: justify;
@@ -298,7 +297,10 @@ button {
 }
 
 .about-list-work li::before {
-  content: url(img/rsz_work.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f0b1";
+  font-variant: normal;
   padding-right: 5px;
 }
 
@@ -311,10 +313,6 @@ button {
   margin-left: 1rem;
 }
 
-.about-list {
-  text-align: justify;
-  margin-top: 2rem;
-}
 
 /* education */
 .about-list-edu {
@@ -322,13 +320,16 @@ button {
   margin-top: 2rem;
   margin-left: 1.5rem;
 }
+
 .about-list-edu li {
   text-indent: -1.5rem;
   margin-bottom: 1rem;
 }
 
 .about-list-edu li::before {
-  content: url(img/rsz_graduation-cap.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f19d";
   padding-right: 5px;
 }
 
@@ -348,13 +349,16 @@ button {
   margin-top: 2rem;
   margin-left: 1.5rem;
 }
+
 .about-list li {
   text-indent: -1.5rem;
   margin-bottom: 1rem;
 }
 
 .about-list li::before {
-  content: url("img/rsz_bullet-point.png");
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f83e";
   padding-right: 5px;
 }
 
