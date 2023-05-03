@@ -454,8 +454,8 @@ button {
 }
 
 .publication-list li {
-  /* margin-bottom: 1rem; */
-  padding-bottom: 1rem;
+  /* margin-bottom: 1rem;
+  padding-bottom: 1rem; */
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -465,7 +465,7 @@ button {
   border-bottom: none;
 }
 
-.publication-list li .title {
+/* .publication-list li .title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -484,7 +484,7 @@ button {
 .publication-list li .year {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
+} */
 
 .publication-list li .link {
   display: inline-block;
