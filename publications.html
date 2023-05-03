@@ -53,7 +53,7 @@
         </div>
     </nav>
     <!-- Publications Section -->
-    <section id="publications" class="section">
+    <!-- <section id="publications" class="section">
         <div class="section-container">
             <h2 class="section-title">Publications</h2>
             <hr>
@@ -88,12 +88,112 @@
                             <p>Journal Name, Volume Number, Page Numbers, Year</p>
                             <p><a href="#">Link to publication</a></p>
                         </div>
-                        <!-- Add more publication items here -->
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <div class="section-container">
+        <h2 class="section-title">Publications</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="topic">Filter by Topic:</label>
+                    <select class="form-control" id="topic">
+                        <option value="all">All</option>
+                        <option value="act">Activity Recognition</option>
+                        <option value="class">DL Classification</option>
+                        <option value="detect">DL Detection</option>
+                        <option value="nlp">Natural Language Processing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row publication-list">
+                    <div class="col-md-12">
+                        <ul class="list-unstyled" id="publication-list">
+                            <li class="publication" data-topic="act class">
+                                <div class="publication-item">
+                                    <h3>
+                                        Developing BrutNet: A New Deep CNN Model with GRU for Realtime Violence Detection
+                                        <div class="project-links">
+                                            <a target="_blank" href="https://ieeexplore.ieee.org/document/9775874" class="btn-publication">Link to publication</a> 
+                                            <a target="_blank" href="https://www.researchgate.net/publication/360812375_Developing_BrutNet_A_New_Deep_CNN_Model_with_GRU_for_Realtime_Violence_Detection" class="btn-publication">PDF</a>
+                                        </div>
+                                    </h3>
+                                    <p>
+                                        <b>Mahmudul Haque</b>, Syma Afsha, Hussain Nyeem<br>
+                                        2022 International Conference on Innovations in Science, Engineering and
+                                        Technology (ICISET) <br>
+                                        Page: 390 - 395<br>
+                                        Publication Year: 2022
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="publication" data-topic="act class det">
+                                <div class="publication-item">
+                                    <h3>
+                                        Machine Learning Models for Content Classification in Film Censorship and Rating
+                                        <div class="project-links">
+                                            <a target="_blank" href="https://ieeexplore.ieee.org/document/9775816" class="btn-publication">Link to publication</a> 
+                                            <a target="_blank" href="https://www.researchgate.net/publication/360812725_Machine_Learning_Models_for_Content_Classification_in_Film_Censorship_and_Rating" class="btn-publication">PDF</a>
+                                        </div>
+                                    </h3>
+                                    <p>
+                                        Syma Afsha, <b>Mahmudul Haque</b>, Hussain Nyeem<br>
+                                        2022 International Conference on Innovations in Science, Engineering and
+                                        Technology (ICISET) <br>
+                                        Page: 396 - 401<br>
+                                        Publication Year: 2022
+                                    </p>
+                                    
+                                </div>
+                            </li>
+                            <li class="publication" data-topic="class">
+                                <div class="publication-item">
+                                    <h3>
+                                        Improving Automatic Sign Language Translation with Image Binarisation and Deep Learning
+                                        <div class="project-links">
+                                            <a target="_blank" href="https://ieeexplore.ieee.org/document/9667804" class="btn-publication">Link to publication</a> 
+                                            <a target="_blank" href="https://www.researchgate.net/publication/357719717_Improving_Automatic_Sign_Language_Translation_with_Image_Binarisation_and_Deep_Learning" class="btn-publication">PDF</a>
+                                        </div>
+                                    </h3>
+                                    <p>
+                                        <b>Mahmudul Haque</b>, Syma Afsha, Tareque Bashar Ovi, Hussain Nyeem<br>
+                                        2021 5th International Conference on Electrical Engineering and Information Communication Technology (ICEEICT) <br>
+                                        Page: 1 - 5<br>
+                                        Publication Year: 2021
+                                    </p>
+                                    
+                                </div>
+                            </li>
+                            <li class="publication" data-topic="detect class nlp">
+                                <div class="publication-item">
+                                    <h3>
+                                        Traffic Surveillance using Vehicle License Plate Detection and Recognition in Bangladesh
+                                        <div class="project-links">
+                                            <a target="_blank" href="https://ieeexplore.ieee.org/document/9393109" class="btn-publication">Link to publication</a> 
+                                            <a target="_blank" href="https://www.researchgate.net/publication/346668325_Traffic_Surveillance_using_Vehicle_License_Plate_Detection_and_Recognition_in_Bangladesh" class="btn-publication">PDF</a>
+                                        </div>
+                                    </h3>
+                                    <p>
+                                        Md. Saif Hassan Onim, Muhaiminul Islam Akash, <b>Mahmudul Haque</b>, Raiyan Ibne Hafiz<br>
+                                        11th International Conference on Electrical and Computer Engineering (ICECE) <br>
+                                        Page: 121 - 124<br>
+                                        Publication Year: 2020
+                                    </p>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
     <!-- Footer -->
@@ -139,6 +239,37 @@
             <p class="text-center">&copy; 2023 Mahmudul Haque. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- <script>
+        $(document).ready(function () {
+            $('#topic').change(function () {
+                var selectedTopic = $(this).val();
+                if (selectedTopic === 'all') {
+                    $('.publication').show();
+                } else {
+                    $('.publication').hide();
+                    $('.publication[data-topic="' + selectedTopic + '"]').show();
+                }
+            });
+        });
+    </script> -->
+    <script>
+        const selectElement = document.querySelector('#topic');
+        const publicationList = document.querySelector('#publication-list');
+
+        selectElement.addEventListener('change', (event) => {
+            const selectedTopic = event.target.value;
+            const publications = publicationList.querySelectorAll('.publication');
+            publications.forEach((publication) => {
+                const topics = publication.getAttribute('data-topic').split(' ');
+                if (selectedTopic === 'all' || topics.includes(selectedTopic)) {
+                    publication.style.display = 'block';
+                } else {
+                    publication.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

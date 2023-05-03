@@ -136,6 +136,26 @@ button {
   background-color: #666666;
 }
 
+.btn-publication{
+  
+  display: inline-block;
+  border: none;
+  background-color: #343a40;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 24px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.btn-publication:hover {
+  background-color: #666666;
+  color: #ffffff
+} 
+
 .profile img {
   width: 100%;
   border: 3px solid #343a40;
