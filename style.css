@@ -136,8 +136,8 @@ button {
   background-color: #666666;
 }
 
-.btn-publication{
-  
+.btn-publication {
+
   display: inline-block;
   border: none;
   background-color: #343a40;
@@ -151,10 +151,11 @@ button {
   margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
+
 .btn-publication:hover {
   background-color: #666666;
   color: #ffffff
-} 
+}
 
 .profile img {
   width: 100%;
@@ -419,6 +420,7 @@ button {
   content: "\f121";
   padding-right: 5px;
 }
+
 /*  */
 .about-list {
   text-align: left;
@@ -501,14 +503,37 @@ button {
 }
 
 /* research project */
-.card{
+.card {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
 @media (max-width: 768px) {
-  .card{
+  .card {
     margin: 0px;
   }
+}
+
+.card-img {
+  /* border: 3px solid #343a40; */
+  margin: 0 1rem;
+  /* width: 100%; */
+}
+.card {
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .card-img {
+    border: 0 solid #343a40;
+    margin: 0;
+  }
+
 }
 
 /* Contact Section */
