@@ -612,6 +612,12 @@ button {
   cursor: pointer;
 }
 
+/* Opportunities */
+
+.apply-button{
+  align-content: center;
+  /* align-items: center; */
+}
 /* Footer Section */
 .footer-section {
   background-color: #343a40;
