@@ -166,6 +166,8 @@ button {
 @media (max-width: 768px) {
   .profile img {
     border: 0px;
+    margin-top: 4%;
+    border: 3px solid #343a40;
     /* border-radius: 50%; */
   }
 }
